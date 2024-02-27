@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Nitrogen <= 130.5\ngini = 0.753\nsamples = 160\nvalue = [2, 8, 2, 19, 58, 33, 38]\nclass = ['Urea 87kg or 1.75 bags, CAN 154kg or 3 bags'] for Nitrogen per hectare, Phosphorus and Potassium are not needed", fillcolor="#dfe3fb"] ;
+1 [label="Nitrogen <= 91.5\ngini = 0.715\nsamples = 102\nvalue = [2, 8, 2, 19, 0, 33, 38]\nclass = ['Urea 87kg or 1.75 bags, CAN 154kg or 3 bags'] for Nitrogen, ['Phosphorus is at the optimum level and no addition needed'], and ['MOP 200kg or 4 bags'] for Potassium per hectare", fillcolor="#fdf1f6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Phosphorus <= 40.0\ngini = 0.606\nsamples = 69\nvalue = [2, 8, 2, 19, 0, 0, 38]\nclass = ['Urea 87kg or 1.75 bags, CAN 154kg or 3 bags'] for Nitrogen, ['Phosphorus is at the optimum level and no addition needed'], and ['MOP 200kg or 4 bags'] for Potassium per hectare", fillcolor="#f5b4d1"] ;
+1 -> 2 ;
+3 [label="Potassium <= 24.5\ngini = 0.549\nsamples = 31\nvalue = [2, 8, 2, 19, 0, 0, 0]\nclass = ['Urea 261kg or 5.2 bags', 'CAN 462kg or 9 bags'] for Nitrogen, ['SSP 667kg or 13.3 bags'] for Phosphorus and ['MOP 200kg or 4 bags'] for Potassium per hectare", fillcolor="#a0f3f1"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 19\nvalue = [0, 0, 0, 19, 0, 0, 0]\nclass = ['Urea 261kg or 5.2 bags', 'CAN 462kg or 9 bags'] for Nitrogen, ['SSP 667kg or 13.3 bags'] for Phosphorus and ['MOP 200kg or 4 bags'] for Potassium per hectare", fillcolor="#39e5e2"] ;
+3 -> 4 ;
+5 [label="Nitrogen <= 27.5\ngini = 0.5\nsamples = 12\nvalue = [2, 8, 2, 0, 0, 0, 0]\nclass = ['Urea 174kg or 3.5 bags, CAN 308kg or 6 bags'] for Nitrogen, ['SSP 333kg or 6.7 bags'] for Phosphorus and ['MOP 200kg or 4 bags'] for Potassium per hectare", fillcolor="#d4ef88"] ;
+3 -> 5 ;
+6 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0, 0, 0]\nclass = ['Urea 261kg or 5.2 bags', 'CAN 462kg or 9 bags'] for Nitrogen, ['SSP 333kg or 6.7 bags'] for Phosphorus and ['MOP 200kg or 4 bags'] for Potassium per hectare", fillcolor="#39e54d"] ;
+5 -> 6 ;
+7 [label="Phosphorus <= 36.5\ngini = 0.32\nsamples = 10\nvalue = [2, 8, 0, 0, 0, 0, 0]\nclass = ['Urea 174kg or 3.5 bags, CAN 308kg or 6 bags'] for Nitrogen, ['SSP 333kg or 6.7 bags'] for Phosphorus and ['MOP 200kg or 4 bags'] for Potassium per hectare", fillcolor="#c9ec6a"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 8\nvalue = [0, 8, 0, 0, 0, 0, 0]\nclass = ['Urea 174kg or 3.5 bags, CAN 308kg or 6 bags'] for Nitrogen, ['SSP 333kg or 6.7 bags'] for Phosphorus and ['MOP 200kg or 4 bags'] for Potassium per hectare", fillcolor="#b7e539"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0, 0, 0, 0, 0, 0]\nclass = ['Urea 174kg or 3.5 bags, CAN 308kg or 6 bags'] for Nitrogen, ['Phosphorus is at the optimum level and no addition needed'], and ['MOP 200kg or 4 bags'] for Potassium per hectare", fillcolor="#e58139"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 38\nvalue = [0, 0, 0, 0, 0, 0, 38]\nclass = ['Urea 87kg or 1.75 bags, CAN 154kg or 3 bags'] for Nitrogen, ['Phosphorus is at the optimum level and no addition needed'], and ['MOP 200kg or 4 bags'] for Potassium per hectare", fillcolor="#e53986"] ;
+2 -> 10 ;
+11 [label="gini = 0.0\nsamples = 33\nvalue = [0, 0, 0, 0, 0, 33, 0]\nclass = ['Urea 87kg or 1.75 bags, CAN 154kg or 3 bags'] for Nitrogen, ['Phosphorus is at the optimum level and no addition needed'], and ['MOP 100kg or 2 bags'] for Potassium per hectare", fillcolor="#b139e5"] ;
+1 -> 11 ;
+12 [label="gini = 0.0\nsamples = 58\nvalue = [0, 0, 0, 0, 58, 0, 0]\nclass = ['Urea 87kg or 1.75 bags, CAN 154kg or 3 bags'] for Nitrogen per hectare, Phosphorus and Potassium are not needed", fillcolor="#3956e5"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
